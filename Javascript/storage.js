@@ -9,7 +9,7 @@ function saveData(key, value){
 function loadData(key){
 	if(localStorage){
 		if(key in localStorage){
-			localStorage.getItem(key);
+			return localStorage.getItem(key);
 		}
 	}else{
 		alert("Your browser doesn't support localStorage API.")
